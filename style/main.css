@@ -2,6 +2,7 @@
 body {
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
+    
 }
 
 a {
@@ -9,48 +10,90 @@ a {
     text-decoration: none;
 }
 
+.basic-border-box{
+    border: 1px solid black;
+    padding: 3px;
+    margin: 0px;
+}
+
+*{
+    box-sizing:border-box;
+}
+/*GENERAL - PALETTE*/
+
+.primary-color{
+    background-color: #79c3ff;
+}
+
+/*GENERAL - DISPLAY*/
+.block {
+    display: block;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+/*GENERAL - TEXT*/
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.text-primary-color{
+    color:#79c3ff;
+}
+  
+.text-secondary-color{
+    color: #51B0FF;
+}
+
+.line-through{
+    text-decoration: line-through;
+}
+
+/******************************************************/
+
 /*HEADER*/
-#header{
-    background-color:coral;
+#header h1 {
+    font-size: 36px;
+    margin: 0;
+    text-align: center;
+    padding: 15px 0 0 15px;
+    text-transform: uppercase;
+}
+
+#header h2{
+   margin-top: 0px;
+    text-align: center;
+    font-size: 18px;
+    padding-left: 15px;
+}
+
+#header span {
+    text-transform: lowercase;
 }
 
 #nav{
     text-align: center;
     list-style-type: none;
-    background-color: rgb(235, 110, 65);
-    padding-left: 0;
 }
 #nav li {
-    color: aliceblue;
     display: inline-block;
-    padding: 6px 8px 6px 8px; 
+    padding: 5px;
 }
 
 #nav li:hover {
-    background-color: coral;
-}
-#nav li a {
-    color: aliceblue;
+    text-decoration: line-through;
 }
 
-h1 {
-    font-size: 36px;
-    margin: 0;
-    text-align: center;
-    padding: 15px 0 0 15px;
-    color:aliceblue;
-    text-transform: uppercase;
-}
+/******************************************************/
 
-h2{
-   margin-top: 0px;
-    text-align: center;
-    font-size: 18px;
-    color:aliceblue;
-    padding-left: 15px;
-}
 /*CONTENT*/
-
 #content {
     width: 600px;
     margin:30px auto;
@@ -58,15 +101,7 @@ h2{
 
 #content h4 {
     padding-bottom: 2px;
-    border-bottom: 1px solid coral;
-}
-
-#content h3 {
-    margin-bottom: 10px;
-}
-
-#content a {
-    color: coral;
+    border-bottom: 1px solid #51B0FF;;
 }
 
 #content a:hover{
@@ -74,7 +109,8 @@ h2{
 }
 
 #content img {
-    border-radius: 10px;
+    margin: 10px  0;
+    border: 1px solid black;
     max-width: 50%;
     height:auto;
 }
